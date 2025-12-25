@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ลงทะเบียนเข้าร่วมอีเวนต์</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>แบบฟอร์มลงทะเบียนเข้าร่วมอีเวนต์</h1>
+        <p>กรอกข้อมูลให้ครบถ้วนเพื่อลงทะเบียนเข้าร่วมอีเวนต์</p>
+    </header>
+
+    <main>
+        <form action="/register" method="POST">
+
+            <!-- ชื่อ-นามสกุล -->
+            <div>
+                <label for="fullname">ชื่อ-นามสกุล *</label><br>
+                <input type="text" id="fullname" name="fullname" required placeholder="กรอกชื่อ-นามสกุล">
+            </div><br>
+
+            <!-- อีเมล -->
+            <div>
+                <label for="email">อีเมล *</label><br>
+                <input type="email" id="email" name="email" required placeholder="example@email.com">
+            </div><br>
+
+            <!-- เบอร์โทร -->
+            <div>
+                <label for="phone">เบอร์โทรศัพท์ *</label><br>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required
+                    title="กรุณากรอกเบอร์โทรศัพท์ 10 หลัก" placeholder="0812345678">
+            </div><br>
+
+            <!-- เพศ -->
+            <div>
+                <p>เพศ *</p>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">ชาย</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">หญิง</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">อื่น ๆ</label>
+            </div><br>
+
+            <!-- ช่วงอายุ -->
+            <div>
+                <label for="age">ช่วงอายุ *</label><br>
+                <select id="age" name="age" required>
+                    <option value="">-- เลือกช่วงอายุ --</option>
+                    <option value="under18">ต่ำกว่า 18 ปี</option>
+                    <option value="18-25">18 - 25 ปี</option>
+                    <option value="26-35">26 - 35 ปี</option>
+                    <option value="over35">มากกว่า 35 ปี</option>
+                </select>
+            </div><br>
+
+            <!-- ความสนใจ -->
+            <div>
+                <p>ความสนใจ (เลือกอย่างน้อย 1) *</p>
+                <input type="checkbox" id="tech" name="interest[]" value="tech" required>
+                <label for="tech">เทคโนโลยี</label><br>
+                <input type="checkbox" id="business" name="interest[]" value="business">
+                <label for="business">ธุรกิจ</label><br>
+                <input type="checkbox" id="design" name="interest[]" value="design">
+                <label for="design">ออกแบบ</label><br>
+                <input type="checkbox" id="marketing" name="interest[]" value="marketing">
+                <label for="marketing">การตลาด</label>
+            </div><br>
+
+            <!-- ยินยอมเงื่อนไข -->
+            <div>
+                <input type="checkbox" id="agree" name="agree" required>
+                <label for="agree">ฉันยอมรับ <a href="/terms">เงื่อนไขการใช้งาน</a> *</label>
+            </div><br>
+
+            <!-- ปุ่ม -->
+            <button type="submit">ลงทะเบียน</button>
+            <button type="reset">ล้างข้อมูล</button>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Event Registration</p>
+    </footer>
+
+</body>
+
+</html>

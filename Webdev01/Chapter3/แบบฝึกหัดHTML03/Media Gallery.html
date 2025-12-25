@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Gallery</title>
+</head>
+
+<body>
+    <header>
+        <h1>แกลเลอรีสื่อของฉัน</h1>
+    </header>
+
+    <main>
+
+   
+        <section>
+            <h2>วิดีโอแนะนำ</h2>
+            <video controls width="100%" poster="https://www.w3schools.com/html/mov_bbb.jpg">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                เบราว์เซอร์ของคุณไม่รองรับวิดีโอ
+            </video>
+        </section>
+
+
+        <section>
+            <h2>เพลงประกอบ</h2>
+            <audio controls>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                เบราว์เซอร์ของคุณไม่รองรับเสียง
+            </audio>
+        </section>
+
+        <section>
+            <h2>รูปภาพ</h2>
+
+            <img src="https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&h=480&w=640"
+                srcset="
+                https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&h=480&w=640 480w,
+                https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&h=720&w=960 960w,
+                https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&h=1080&w=1440 1440w"
+                sizes="(max-width: 600px) 480px, (max-width: 900px) 960px, 1440px"
+                alt="ภูเขาและท้องฟ้า"
+                loading="lazy"
+                style="width:100%; height:auto; margin-bottom:15px;">
+
+            <img src="https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&h=480&w=640"
+                srcset="
+                https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&h=480&w=640 480w,
+                https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&h=720&w=960 960w,
+                https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&h=1080&w=1440 1440w"
+                sizes="(max-width: 600px) 480px, (max-width: 900px) 960px, 1440px"
+                alt="ทะเลและชายหาด"
+                loading="lazy"
+                style="width:100%; height:auto; margin-bottom:15px;">
+
+        </section>
+
+    </main>
+</body>
+
+</html>

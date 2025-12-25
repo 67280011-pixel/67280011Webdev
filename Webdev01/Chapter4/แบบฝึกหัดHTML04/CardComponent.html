@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Card Futuristic</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    width: 380px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 60px rgba(0,0,0,0.6);
+}
+
+.card img {
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    transition: transform 0.4s;
+}
+
+.card img:hover {
+    transform: scale(1.05);
+}
+
+.card-content {
+    padding: 25px;
+    color: #f0f0f0;
+}
+
+.card-content h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #00ffd5;
+    letter-spacing: 1px;
+}
+
+.card-content p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    color: #c0f0ff;
+}
+
+.card-btn {
+    display: inline-block;
+    padding: 12px 22px;
+    background: linear-gradient(135deg, #00ffd5, #1c92d2);
+    color: #111;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 700;
+    transition: 0.4s;
+}
+
+.card-btn:hover {
+    background: linear-gradient(135deg, #1c92d2, #00ffd5);
+    box-shadow: 0 8px 25px rgba(0,255,213,0.6);
+    color: #fff;
+}
+
+@media(max-width:420px){
+    .card { width: 90%; }
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+    <img src="pexels-pixabay-373543.jpg" alt="Futuristic City">
+    <div class="card-content">
+        <h2>การเดินทางสู่อนาคต</h2>
+        <p>
+            โลกอนาคตกำลังรอการสำรวจ เทคโนโลยีและนวัตกรรมสร้างแรงบันดาลใจให้เราพัฒนาตนเอง
+            และออกแบบชีวิตให้ดียิ่งขึ้น เราพร้อมหรือยังที่จะก้าวไปข้างหน้า
+        </p>
+        <a href="https://www.futurelearn.com/info/courses/future" target="_blank" class="card-btn">อ่านเพิ่มเติม</a>
+    </div>
+</div>
+
+</body>
+</html>
