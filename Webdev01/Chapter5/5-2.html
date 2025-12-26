@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <title>House Listing Workshop</title>
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Prompt', sans-serif;
+        }
+
+        body {
+            background: #f4f6f8;
+            margin: 0;
+            padding: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        
+        .listing-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        /* ===== Card ===== */
+        .house-card {
+            width: 300px;
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* ===== Image ===== */
+        .card-image {
+            position: relative;
+        }
+
+        .card-image img {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* ===== Badge ===== */
+        .badge {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            color: #fff;
+            font-weight: 500;
+        }
+
+        .single {
+            background: #e74c3c;
+        }
+
+        .condo {
+            background: #3498db;
+        }
+
+        .townhome {
+            background: #2ecc71;
+        }
+
+        /* ===== Content ===== */
+        .card-content {
+            padding: 16px;
+        }
+
+        .price {
+            font-size: 22px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 6px;
+        }
+
+        .location {
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+
+        .details {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .details span {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>🏠 รายการประกาศขายบ้านล่าสุด</h1>
+
+    <div class="listing-container">
+
+       
+        <div class="house-card">
+            <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994" alt="">
+                <span class="badge single">บ้านเดี่ยว</span>
+            </div>
+            <div class="card-content">
+                <div class="price">฿ 5,900,000</div>
+                <div class="location">หมู่บ้านกรีนวัลเลย์, บางนา</div>
+                <div class="details">
+                    <span>🛏 3 ห้อง</span>
+                    <span>🛁 2 ห้อง</span>
+                    <span>🚗 2 จอด</span>
+                </div>
+            </div>
+        </div>
+
+       
+        <div class="house-card">
+            <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="">
+                <span class="badge single">บ้านเดี่ยว</span>
+            </div>
+            <div class="card-content">
+                <div class="price">฿ 8,500,000</div>
+                <div class="location">โครงการเดอะเลค, ราชพฤกษ์</div>
+                <div class="details">
+                    <span>🛏 4 ห้อง</span>
+                    <span>🛁 3 ห้อง</span>
+                    <span>🚗 3 จอด</span>
+                </div>
+            </div>
+        </div>
+
+       
+        <div class="house-card">
+            <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688" alt="">
+                <span class="badge condo">คอนโด</span>
+            </div>
+            <div class="card-content">
+                <div class="price">฿ 2,890,000</div>
+                <div class="location">สุขุมวิท 77 (อ่อนนุช)</div>
+                <div class="details">
+                    <span>🛏 1 ห้อง</span>
+                    <span>🛁 1 ห้อง</span>
+                    <span>📐 35 ตร.ม.</span>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="house-card">
+            <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267" alt="">
+                <span class="badge condo">คอนโด</span>
+            </div>
+            <div class="card-content">
+                <div class="price">฿ 3,250,000</div>
+                <div class="location">รัชดา - ห้วยขวาง</div>
+                <div class="details">
+                    <span>🛏 2 ห้อง</span>
+                    <span>🛁 1 ห้อง</span>
+                    <span>📐 42 ตร.ม.</span>
+                </div>
+            </div>
+        </div>
+
+      
+        <div class="house-card">
+            <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c" alt="">
+                <span class="badge townhome">ทาวน์โฮม</span>
+            </div>
+            <div class="card-content">
+                <div class="price">฿ 3,900,000</div>
+                <div class="location">บางใหญ่, นนทบุรี</div>
+                <div class="details">
+                    <span>🛏 3 ห้อง</span>
+                    <span>🛁 2 ห้อง</span>
+                    <span>🚗 1 จอด</span>
+                </div>
+            </div>
+        </div>
+
+      
+        <div class="house-card">
+            <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be" alt="">
+                <span class="badge townhome">ทาวน์โฮม</span>
+            </div>
+            <div class="card-content">
+                <div class="price">฿ 4,200,000</div>
+                <div class="location">ลาดกระบัง, กรุงเทพฯ</div>
+                <div class="details">
+                    <span>🛏 3 ห้อง</span>
+                    <span>🛁 3 ห้อง</span>
+                    <span>🚗 2 จอด</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
