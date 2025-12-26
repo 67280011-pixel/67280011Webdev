@@ -1,0 +1,189 @@
+/* ================= GENERAL ================= */
+body {
+  font-family: 'Sarabun', sans-serif;
+  line-height: 1.7;
+  background-color: #fff8f0;
+  color: #3b2e2e;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Pridi', serif;
+  color: #6a3e00;
+}
+
+/* ================= NAVBAR ================= */
+.thai-navbar {
+  background-color: #b36b00;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.thai-navbar .nav-link {
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.thai-navbar .nav-link:hover,
+.thai-navbar .nav-link.active {
+  color: #ffd966;
+  font-weight: bold;
+}
+
+/* ================= HERO / HEADER ================= */
+.hero-section,
+.page-header {
+  background: linear-gradient(rgba(179, 107, 0, 0.6), rgba(255, 217, 102, 0.5)), url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf') no-repeat center center;
+  background-size: cover;
+  padding: 100px 0;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-title,
+.page-header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle,
+.page-header p {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+/* ================= CONTENT SECTIONS ================= */
+.content-section {
+  padding: 80px 0;
+}
+
+.bg-light {
+  background-color: #fff3e0 !important;
+}
+
+.bg-gold {
+  background-color: #ffd966 !important;
+  color: #6a3e00;
+}
+
+.highlight-box {
+  background: #fff8e1;
+  padding: 30px;
+  border-left: 6px solid #b36b00;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  transition: transform 0.3s;
+}
+
+.highlight-box:hover {
+  transform: translateY(-5px);
+}
+
+/* ================= CARDS ================= */
+.sen-card,
+.benefit-card,
+.philo-box {
+  background-color: #fff8e1;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.sen-card:hover,
+.benefit-card:hover,
+.philo-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.sen-card h5,
+.benefit-card h5,
+.philo-box h4 {
+  color: #b36b00;
+  margin-bottom: 10px;
+}
+
+/* ================= IMAGE CAPTION ================= */
+.img-caption {
+  font-size: 0.9rem;
+  color: #6a3e00;
+  margin-top: 6px;
+  font-style: italic;
+}
+
+/* ================= BUTTON ================= */
+.btn-warning {
+  background-color: #b36b00;
+  border: none;
+  transition: all 0.3s;
+}
+
+.btn-warning:hover {
+  background-color: #ffd966;
+  color: #6a3e00;
+  transform: scale(1.05);
+}
+
+/* ================= FOOTER ================= */
+.thai-footer {
+  background-color: #b36b00;
+  color: #fff;
+  padding: 50px 0 20px 0;
+}
+
+.thai-footer h5 {
+  color: #ffd966;
+  margin-bottom: 15px;
+}
+
+.thai-footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.thai-footer a:hover {
+  color: #ffd966;
+}
+
+/* ================= ANIMATION ON SCROLL ================= */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  opacity: 0;
+  animation: fadeInUp 1s forwards;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+  .hero-title,
+  .page-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-subtitle,
+  .page-header p {
+    font-size: 1rem;
+  }
+
+  .highlight-box {
+    padding: 20px;
+  }
+}
